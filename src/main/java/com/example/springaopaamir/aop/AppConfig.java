@@ -1,10 +1,10 @@
-package com.example.springaopaamir;
+package com.example.springaopaamir.aop;
 
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
-@ComponentScan(basePackages = "com.example")
+/*@Configuration
+@ComponentScan(basePackages = "com.example")*/
 public class AppConfig {
 }

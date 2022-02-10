@@ -1,4 +1,4 @@
-package com.example.springaopaamir;
+package com.example.springaopaamir.aop;
 
 import org.springframework.stereotype.Component;
 
