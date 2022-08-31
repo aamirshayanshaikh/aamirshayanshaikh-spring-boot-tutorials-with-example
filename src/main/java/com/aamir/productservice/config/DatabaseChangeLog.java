@@ -1,7 +1,7 @@
 package com.aamir.productservice.config;
 
-import com.github.cloudyrock.mongock.ChangeLog;
+/*import com.github.cloudyrock.mongock.ChangeLog;
 
-@ChangeLog
+@ChangeLog*/
 public class DatabaseChangeLog {
 }

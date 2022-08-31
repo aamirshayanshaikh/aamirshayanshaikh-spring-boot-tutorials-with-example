@@ -1,11 +1,11 @@
 package com.aamir.productservice;
 
-import io.mongock.runner.springboot.EnableMongock;
+/*import io.mongock.runner.springboot.EnableMongock;*/
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@EnableMongock
+/*@EnableMongock*/
 public class ProductServiceApplication {
 
     public static void main(String[] args) {
