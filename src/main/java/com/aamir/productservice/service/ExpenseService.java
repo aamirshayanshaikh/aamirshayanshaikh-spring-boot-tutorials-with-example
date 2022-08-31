@@ -2,18 +2,19 @@ package com.aamir.productservice.service;
 
 import com.aamir.productservice.model.Expense;
 import com.aamir.productservice.repository.ExpenseRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
+@Transactional
 public class ExpenseService {
 
     private final ExpenseRepository expenseRepository;
 
-    public ExpenseService(ExpenseRepository expenseRepository) {
-        this.expenseRepository = expenseRepository;
-    }
 
     public void addExpense(Expense expense) {
         expenseRepository.insert(expense);
