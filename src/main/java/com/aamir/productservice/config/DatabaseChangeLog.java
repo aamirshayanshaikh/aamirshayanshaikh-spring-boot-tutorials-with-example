@@ -14,7 +14,7 @@ import java.util.List;
 public class DatabaseChangeLog {
 
 
-    @ChangeSet(order = "001", id = "seedDatabase", author = "Sai")
+    @ChangeSet(order = "001", id = "seedDatabase", author = "Aamir Shayan")
     public void seedDatabase(ExpenseRepository expenseRepository) {
         List<Expense> expenseList = new ArrayList<>();
         expenseList.add(createNewExpense("Movie Tickets", ExpenseCategory.ENTERTAINMENT, BigDecimal.valueOf(40)));
