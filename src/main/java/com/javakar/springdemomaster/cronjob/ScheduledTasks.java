@@ -15,11 +15,20 @@ public class ScheduledTasks {
     private static final Logger logger = LoggerFactory.getLogger(ScheduledTasks.class);
     private static final DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
 
+    /*
+     * Execute the annotated method with a fixed period in milliseconds between
+     * invocations return the period in milliseconds
+     */
    @Scheduled(fixedRate = 2000)
     public void scheduleTaskWithFixedRate() {
         logger.info("scheduleTaskWithFixedRate :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()) );
     }
 
+
+    /*
+     * Execute the annotated method with a fixed period in milliseconds between the
+     * end of the last invocation and the start of the next. return the delay in milliseconds
+     */
      @Scheduled(fixedDelay = 2000)
     public void scheduleTaskWithFixedDelay() {
         logger.info("scheduleTaskWithFixedDelay :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()));
@@ -31,6 +40,9 @@ public class ScheduledTasks {
         }
     }
 
+    /*
+	 * Number of milliseconds to delay before the first execution
+    */
     @Scheduled(fixedRate = 2000, initialDelay = 5000)
     public void scheduleTaskWithInitialDelay() {
         logger.info("FscheduleTaskWithInitialDelay :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()));
